@@ -1,0 +1,22 @@
+/*------------------------------Question 1------------------------------
+Ramesh’s basic salary is input through the keyboard. His dearness
+allowance is 40% of basic salary, and house rent allowance is 20% of
+basic salary. Write a program to calculate his gross salary.
+----------------------------------------------------------------------*/
+/*Formula for gross salary:
+                    gross salary=DA+HRA+Basic salary
+*/
+#include<stdio.h>
+#include<conio.h>
+int main(){
+    int bs,da,hra,gs;
+    printf("Enter the Basic salary: ");
+    scanf("%d",&bs);
+    da=bs+0.4;
+    hra=bs+0.2;
+    gs=bs+da+hra;
+    printf("Data allowance DA is: %d\n",da);
+    printf("House Rent Allowance HRA is :%d\n",hra);
+    printf("Gross salary is: %d",gs);
+    return 0;
+}
